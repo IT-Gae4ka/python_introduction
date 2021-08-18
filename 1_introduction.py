@@ -105,10 +105,10 @@ adress = "Some str. 55"
 "Курьер уже везет ваш заказ" + str(order)  + "по аддресу"
 
 #2 Форматирование через .format()
-message = "Курьер уже везет ваш заказ {adress} по аддресу {order}".format(order=order, adress=None)
+message = "Курьер уже везет ваш заказ {order} по аддресу {adress}".format(order=order, adress=None)
 
 # f-форматирование
-message = f"Курьер уже везет ваш заказ {adress} по аддресу {order}"
+message = f"Курьер уже везет ваш заказ {order} по аддресу {adress}"
 
 print(message)
 
@@ -135,7 +135,7 @@ int("56")
 str(None)
 float(55)
 # А так - нет. Непонятно, как строка может стать дробным числом.
-float('55')
+float('55') #нет, выдает 55.0 
 float("Hello")
 
 
