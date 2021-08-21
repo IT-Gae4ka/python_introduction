@@ -111,6 +111,6 @@ finally:
 try-except-finally.
 Пример это конструкция with-as
 """
-with open(existing_file, "w") as f:
+with open(existing_file, "w") as f: #выдает ошибку:io.UnsupportedOperation:not readable. если "w" заменить на "r" заработает.
     res = f.read()
     print(res)
